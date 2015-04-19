@@ -7,3 +7,11 @@ bundle
 ruby test/dice_test.rb
 ruby run.rb
 ```
+Or you may use gem *games_dice*
+```sh
+gem install games_dice
+```
+And run ruby code
+```ruby
+GamesDice.create('100d6').probabilities.to_h[350]
+```
